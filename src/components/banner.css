@@ -1,0 +1,23 @@
+.banner {
+    max-width: 100vw;
+    min-height: 140px;
+    padding-inline: 2rem;
+    margin: auto;
+    position: relative;
+    display: grid;
+    place-items: center;
+    margin-bottom: 2rem;
+}
+
+.banner img {
+    border-radius: 2rem;
+    opacity: 1;
+    border: 1px solid #f7f7f7;
+}
+
+.banner h2 {
+    position: absolute;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 3rem;
+}
