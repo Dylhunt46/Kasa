@@ -1,0 +1,13 @@
+.footer {
+    background: #000000;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    height: 209px;
+    display: grid;
+    place-items: center;
+}
+
+.footer img {
+    background: #000000;
+}

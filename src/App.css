@@ -1,3 +1,7 @@
+:root {
+  --primary-color: #ff6060;
+}
+
 body {
   box-sizing: border-box;
   margin: 0;
