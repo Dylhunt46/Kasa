@@ -9,6 +9,14 @@
     flex-basis: 30%;
 }
 
+.card a {
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
 .card__title {
     width: 25%;
     margin-inline-start: 1rem;

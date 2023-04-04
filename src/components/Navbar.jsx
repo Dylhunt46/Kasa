@@ -1,14 +1,22 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './navbar.css';
 
 function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar__logo">
-        <img src="logo.png" alt="Logo Kasa" />
+        <NavLink to={'/'}>
+          <img src="logo.png" alt="Logo Kasa" />
+        </NavLink>
       </div>
-      <div>Accueil</div>
-      <div>A propos</div>
+
+      <NavLink to={'/'}>
+        <div>Accueil</div>
+      </NavLink>
+      <NavLink to={'/about'}>
+        <div>A propos</div>
+      </NavLink>
     </nav>
   );
 }

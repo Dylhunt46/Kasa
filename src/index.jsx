@@ -7,6 +7,15 @@ const routeur = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement: <h1>404 Not found</h1>,
+  },
+  {
+    path: '/accomodation',
+    element: <h1>Nos logements</h1>,
+  },
+  {
+    path: '/about',
+    element: <h1>A propos</h1>,
   },
 ]);
 

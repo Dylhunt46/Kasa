@@ -9,3 +9,16 @@
 .navbar__logo {
     margin-right: auto;
 }
+
+.navbar a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.navbar a.active {
+    text-decoration: underline;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
