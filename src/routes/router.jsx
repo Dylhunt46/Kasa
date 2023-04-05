@@ -1,7 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './HomePage';
-import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
+import { createBrowserRouter, Outlet } from 'react-router-dom';
+import App from './App';
 import Navbar from './layout/Navbar';
 import Main from './layout/Main';
 import Footer from './layout/Footer';
@@ -18,7 +17,7 @@ const HeaderFooterLayout = () => {
   );
 };
 
-const routeur = createBrowserRouter([
+export const routeur = createBrowserRouter([
   {
     path: '/',
     element: <HeaderFooterLayout />,
@@ -26,7 +25,7 @@ const routeur = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <App />,
+        element: <HomePage />,
       },
       {
         path: '/accomodation',
@@ -39,10 +38,3 @@ const routeur = createBrowserRouter([
     ],
   },
 ]);
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <RouterProvider router={routeur} />
-  </React.StrictMode>
-);
