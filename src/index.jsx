@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './HomePage';
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import Navbar from './layout/Navbar';
 import Main from './layout/Main';
 import Footer from './layout/Footer';
+import HomePage from './pages/HomePage';
 
 const HeaderFooterLayout = () => {
   return (
@@ -26,7 +26,7 @@ const routeur = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <App />,
+        element: <HomePage />,
       },
       {
         path: '/accomodation',
