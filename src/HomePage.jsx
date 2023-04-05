@@ -3,7 +3,7 @@ import Banner from './components/Banner';
 import Gallery from './components/Gallery';
 import './HomePage.css';
 
-function App() {
+function HomePage() {
   return (
     <>
       <Banner />
@@ -12,4 +12,4 @@ function App() {
   );
 }
 
-export default App;
+export default HomePage;

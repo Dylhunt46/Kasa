@@ -1,6 +1,6 @@
 import React from 'react';
 import { createBrowserRouter, Outlet } from 'react-router-dom';
-import App from './App';
+import HomePage from './HomePage';
 import Navbar from './layout/Navbar';
 import Main from './layout/Main';
 import Footer from './layout/Footer';
