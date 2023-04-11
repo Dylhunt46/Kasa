@@ -1,0 +1,57 @@
+@use "../scss/variables.scss" as *;
+
+.accommodation__header {
+    display: flex;
+    margin-bottom: 2rem;
+
+    .accommodation__title {
+        flex-grow: 1;
+    }
+
+    .accommodation__owner__details {
+        display: flex;
+        gap: .5rem;
+    }
+
+    .accommodation__owner__badge {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        background-color: $gallery-background-dark;
+    }
+
+    h3 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-block: 0;
+        font-weight: 500;
+        font-size: 1.1rem;
+    }
+
+    .accommodation__owner__stars {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .2rem;
+        font-size: 2rem;
+
+        .off {
+            color: $gallery-background-dark;
+        }
+    }
+}
+
+.accommodation__tags {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 100px));
+    gap: .5rem;
+
+    span {
+        background-color: $color-primary;
+        color: $color-tertiary;
+        padding: 0.3em 1em;
+        border-radius: .7rem;
+        text-align: center;
+    }
+}

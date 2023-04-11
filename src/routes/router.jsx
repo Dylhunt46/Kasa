@@ -1,9 +1,10 @@
 import React from 'react';
 import { createBrowserRouter, Outlet } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import Navbar from './layout/Navbar';
-import Main from './layout/Main';
-import Footer from './layout/Footer';
+import HomePage from '../pages/HomePage';
+import AccomodationPage from '../pages/AccomodationPage';
+import Navbar from '../layout/Navbar';
+import Main from '../layout/Main';
+import Footer from '../layout/Footer';
 
 const HeaderFooterLayout = () => {
   return (
@@ -29,11 +30,11 @@ export const routeur = createBrowserRouter([
       },
       {
         path: '/accomodation',
-        element: <h1>Logements</h1>,
+        element: <AccomodationPage />,
       },
       {
         path: '/about',
-        element: <h1>A proposs</h1>,
+        element: <h1>A propos</h1>,
       },
     ],
   },
