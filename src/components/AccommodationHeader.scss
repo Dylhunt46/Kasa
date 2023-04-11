@@ -3,14 +3,45 @@
 .accommodation__header {
     display: flex;
     margin-bottom: 2rem;
+    gap: 1rem;
+
+    @media screen and (width <=768px) {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-weight: 500;
+        margin-block: 0;
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-weight: 500;
+        font-size: 1.1rem;
+        margin-top: 0.5rem;
+    }
 
     .accommodation__title {
         flex-grow: 1;
     }
 
+    .accommodation__owner {
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (width <=768px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
     .accommodation__owner__details {
         display: flex;
         gap: .5rem;
+
+        @media screen and (width <=768px) {
+            order: 1;
+        }
     }
 
     .accommodation__owner__badge {
