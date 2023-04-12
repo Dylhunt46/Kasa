@@ -5,6 +5,7 @@ import AccomodationPage from '../pages/AccomodationPage';
 import Navbar from '../layout/Navbar';
 import Main from '../layout/Main';
 import Footer from '../layout/Footer';
+import About from '../pages/About';
 
 const HeaderFooterLayout = () => {
   return (
@@ -34,7 +35,7 @@ export const routeur = createBrowserRouter([
       },
       {
         path: '/about',
-        element: <h1>A propos</h1>,
+        element: <About />,
       },
     ],
   },

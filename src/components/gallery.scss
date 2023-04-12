@@ -1,5 +1,7 @@
+@use "../scss/variables.scss" as *;
+
 .gallery {
-    background: #f7f7f7;
+    background: $gallery-background-dark;
     min-height: 50vh;
     border-radius: 2rem;
     display: flex;
@@ -7,12 +9,17 @@
     justify-content: space-between;
     gap: 1rem;
     padding: 3rem;
+
+    &>* {
+        width: 100%;
+        max-width: 20rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .gallery {
         justify-content: center;
-        background: #ffffff;
+        background: $gallery-background-light;
         padding: 0;
     }
 }

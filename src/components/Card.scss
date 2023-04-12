@@ -1,0 +1,37 @@
+@use "../scss/variables.scss" as *;
+
+.card {
+    // width: 30%;
+    min-width: 200px;
+    min-height: 200px;
+    background-image: url(../assets/HomeBanner.png);
+    background-size: cover;
+    border-radius: 1rem;
+    display: grid;
+    align-items: end;
+    flex-basis: 30%;
+
+    @media screen and (max-width: 768px) {
+        .card {
+            flex-basis: 100%;
+        }
+    }
+
+
+
+    .card a {
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .card a:hover {
+        text-decoration: underline;
+    }
+
+    .card__title {
+        width: 50%;
+        margin-inline-start: .5rem;
+        margin-block-end: .5rem;
+        color: #fff;
+    }
+}

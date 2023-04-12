@@ -1,9 +1,9 @@
 import React from 'react';
-import './AccommodationDescription.scss';
+import './DescriptionPanel.scss';
 
-function AccommodationDescription() {
+function DescriptionPanel() {
   return (
-    <div className="accommodation__description">
+    <div className="description__panel">
       <p className="description__header">
         <span>Description</span>
         <i className="fa-sharp fa-solid fa-chevron-up"></i>
@@ -20,4 +20,4 @@ function AccommodationDescription() {
   );
 }
 
-export default AccommodationDescription;
+export default DescriptionPanel;

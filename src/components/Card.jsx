@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Card.css';
+import './Card.scss';
 
 function Card() {
   return (
-    <div className="card">
-      <Link to="/accomodation">
+    <Link to="/accomodation">
+      <div className="card">
         <div className="card__title">Titre de la location</div>
-      </Link>
-    </div>
+      </div>
+    </Link>
   );
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import './gallery.css';
+import './gallery.scss';
 import Card from './Card.jsx';
 
 function Gallery() {
