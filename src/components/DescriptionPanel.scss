@@ -2,6 +2,8 @@
 
 .description__panel {
     margin-bottom: 1rem;
+    flex-basis: 50%;
+    overflow: hidden;
 
     p {
         margin-block: 0;
@@ -10,14 +12,14 @@
     .description__header {
         background-color: $color-primary;
         color: $color-tertiary;
-        padding: 1rem;
+        padding: .2em 1em;
         border-radius: .7rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         i {
-            font-size: 1.5rem;
+            font-size: 2rem;
             cursor: pointer;
         }
     }
@@ -29,5 +31,14 @@
         position: relative;
         top: -0.5rem;
         z-index: -1;
+        transition: transform .3s ease-in-out;
+
+        &.hidden {
+            transform: translateY(-100%);
+        }
+
+        &.visible {
+            transform: translateY(0);
+        }
     }
 }

@@ -1,31 +1,38 @@
 import React from 'react';
 import './AccommodationHeader.scss';
 
-function AccommodationHeader() {
+function AccommodationHeader({ selectedAccommodation }) {
+  const { name } = selectedAccommodation.host;
+  const [firstname, lastname] = name.split(' ');
   return (
     <div className="accommodation__header">
       <div className="accommodation__title">
-        <h1>Cozy loft in a Canal Saint-Martin</h1>
-        <h2>Paris, Île de France</h2>
+        <h1>{selectedAccommodation.title}</h1>
+        <h2>{selectedAccommodation.location}</h2>
         <div className="accommodation__tags">
-          <span>Cozy</span>
-          <span>Canal</span>
-          <span>Paris 10</span>
+          {selectedAccommodation.tags.map((tag) => (
+            <span key={tag}>{tag}</span>
+          ))}
         </div>
       </div>
       <div className="accommodation__owner">
         <div className="accommodation__owner__details">
           <h3>
-            <span>Alexandre</span> <span>Dumas</span>
+            <span>{firstname}</span> <span>{lastname}</span>
           </h3>
-          <div className="accommodation__owner__badge"></div>
+          <div className="accommodation__owner__badge">
+            <img src={selectedAccommodation.host.picture} alt="" />
+          </div>
         </div>
         <div className="accommodation__owner__stars">
-          <span className="on">★</span>
-          <span className="on">★</span>
-          <span className="on">★</span>
-          <span className="off">★</span>
-          <span className="off">★</span>
+          {[1, 2, 3, 4, 5].map((num) => (
+            <span
+              key={num}
+              className={selectedAccommodation.rating >= num ? 'on' : ''}
+            >
+              ★
+            </span>
+          ))}
         </div>
       </div>
     </div>

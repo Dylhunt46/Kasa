@@ -44,9 +44,9 @@
         }
     }
 
-    .accommodation__owner__badge {
-        width: 4rem;
-        height: 4rem;
+    .accommodation__owner__badge img {
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         background-color: $gallery-background-dark;
     }
@@ -66,9 +66,10 @@
         align-items: center;
         gap: .2rem;
         font-size: 2rem;
+        color: $gallery-background-dark;
 
-        .off {
-            color: $gallery-background-dark;
+        .on {
+            color: $color-primary;
         }
     }
 }

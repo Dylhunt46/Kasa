@@ -1,10 +1,13 @@
 import React from 'react';
 import './ImageBanner.scss';
 
-function ImageBanner() {
+function ImageBanner(props) {
+  const imageUrl = props.imageUrl
+    ? props.imageUrl
+    : 'https://picsum.photos/1920/1080';
   return (
     <div className="Image__banner">
-      <img src="accommodation-1-3.jpg" alt="Appartement" />
+      <img src={imageUrl} alt="Appartement" />
     </div>
   );
 }
