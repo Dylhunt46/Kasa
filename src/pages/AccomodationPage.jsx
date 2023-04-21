@@ -25,7 +25,7 @@ function AccomodationPage() {
 
   return (
     <div className="accommodation-page">
-      <ImageBanner imageUrl={selectedAccommodation.cover} />
+      <ImageBanner pictures={selectedAccommodation.pictures} />
       <AccommodationHeader selectedAccommodation={selectedAccommodation} />
       <div className="accommodation__description__area">
         <DescriptionPanel
@@ -34,8 +34,8 @@ function AccomodationPage() {
         />
         <DescriptionPanel
           title="Equipement"
-          content={selectedAccommodation.equipments.map((eq) => (
-            <li>{eq}</li>
+          content={selectedAccommodation.equipments.map((eq, i) => (
+            <li key={i}>{eq}</li>
           ))}
         />
       </div>
