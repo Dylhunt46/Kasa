@@ -1,21 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './gallery.scss';
 import Card from './Card.jsx';
+import useAccomodations from './../hooks/useAccommodations.jsx';
 
 function Gallery() {
-  const [accommodations, setAccommodations] = useState([]);
-
-  useEffect(() => {
-    const abortController = new AbortController();
-
-    fetch('logements.json', { signal: abortController.signal })
-      .then((res) => res.json())
-      .then((res) => setAccommodations(res))
-      .catch(console.error);
-    return () => {
-      abortController.abort();
-    };
-  }, []);
+  const accommodations = useAccomodations();
 
   return (
     <div className="gallery">

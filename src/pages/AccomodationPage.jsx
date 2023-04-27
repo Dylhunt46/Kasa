@@ -1,26 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './AccomodationPage.scss';
 import DescriptionPanel from '../components/DescriptionPanel';
 import ImageBanner from '../components/ImageBanner.jsx';
 import AccommodationHeader from '../components/AccommodationHeader';
-import { useLocation } from 'react-router-dom';
+import useAccommodation from '../hooks/useAccommodation';
 
 function AccomodationPage() {
-  const location = useLocation();
-  const [selectedAccommodation, setSelectedAccommodation] = useState(null);
-  useEffect(fetchAccommodationData, []);
+  const selectedAccommodation = useAccommodation();
 
-  function fetchAccommodationData() {
-    fetch('logements.json')
-      .then((res) => res.json())
-      .then((accommodations) => {
-        const accommodation = accommodations.find(
-          (accommodation) => accommodation.id === location.state.accommodationId
-        );
-        setSelectedAccommodation(accommodation);
-      })
-      .catch(console.error);
-  }
   if (selectedAccommodation == null) return <div>... Loading</div>;
 
   return (
