@@ -37,7 +37,7 @@ function ImageBanner(props) {
   return (
     <div className="Image__banner">
       <div className="image__container">{getCarouselOrDefaultImage()}</div>
-      {arePicturesAvailable() && (
+      {arePicturesAvailable() && pictures.length > 1 && (
         <>
           <button className="btn btn-previous" onClick={moveToPrevious}>
             <i className="fa-solid fa-chevron-left"></i>
