@@ -1,0 +1,24 @@
+@use "../scss/variables.scss" as *;
+
+.banner {
+    width: 100%;
+    min-height: 223px;
+    margin: auto;
+    position: relative;
+    display: grid;
+    place-items: center;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)), url(./../assets/HomeBanner.png);
+    background-size: cover;
+    background-position: center;
+
+    &.banner h2 {
+        position: absolute;
+        color: $color-tertiary;
+        font-weight: 500;
+        font-size: 3rem;
+
+    }
+}
