@@ -12,10 +12,10 @@ function Navbar() {
       </div>
 
       <NavLink to={'/'}>
-        <div>Accueil</div>
+        <div className="link">Accueil</div>
       </NavLink>
       <NavLink to={'/about'}>
-        <div>A propos</div>
+        <div className="link">A propos</div>
       </NavLink>
     </nav>
   );
