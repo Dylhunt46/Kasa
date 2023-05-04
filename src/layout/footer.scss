@@ -1,0 +1,28 @@
+@use "../scss/variables.scss" as *;
+
+
+.footer {
+    background: #000000;
+    color: #ffffff;
+    padding: 0 20px;
+    text-align: center;
+    height: 209px;
+    display: grid;
+    place-items: center;
+
+    img {
+        background: #000000;
+        padding-top: 40px;
+    }
+
+    .footer__text {
+        font-size: 1.5rem;
+    }
+
+    @media screen and (width <=768px) {
+        .footer__text {
+            font-size: .75rem;
+            padding-bottom: 60px;
+        }
+    }
+}
