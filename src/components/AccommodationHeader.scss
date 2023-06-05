@@ -76,8 +76,9 @@
 
 .accommodation__tags {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 100px));
+    grid-template-columns: repeat(auto-fit, minmax(50px, 200px));
     gap: .5rem;
+    margin-top: 2rem;
 
     span {
         background-color: $color-primary;

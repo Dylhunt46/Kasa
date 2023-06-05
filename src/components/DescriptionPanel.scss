@@ -26,12 +26,16 @@
 
     .description__content {
         background-color: $gallery-background-dark;
-        padding: 1rem;
+        padding: 2.5rem 1rem;
         border-radius: .7rem;
         position: relative;
-        top: -0.5rem;
+        top: -2rem;
         z-index: -1;
         transition: transform .3s ease-in-out;
+
+        li {
+            list-style-type: none;
+        }
 
         &.hidden {
             transform: translateY(-100%);
