@@ -23,5 +23,11 @@
         padding: 0;
         flex-direction: column;
 
+        &>* {
+            max-width: 100%;
+
+        }
     }
+
+
 }
