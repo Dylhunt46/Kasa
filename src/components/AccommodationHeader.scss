@@ -12,12 +12,12 @@
     h1 {
         font-weight: 500;
         margin-block: 0;
-        font-size: 2.2rem;
+        font-size: 1.125rem;
     }
 
     h2 {
         font-weight: 500;
-        font-size: 1.1rem;
+        font-size: .875rem;
         margin-top: 0.5rem;
     }
 
@@ -49,6 +49,11 @@
         height: 50px;
         border-radius: 50%;
         background-color: $gallery-background-dark;
+
+        @media screen and (width <=768px) {
+            width: 32px;
+            height: 32px;
+        }
     }
 
     h3 {
@@ -58,6 +63,11 @@
         margin-block: 0;
         font-weight: 500;
         font-size: 1.1rem;
+
+        @media screen and (width <=768px) {
+            font-size: 0.75rem;
+            line-height: 1.1rem;
+        }
     }
 
     .accommodation__owner__stars {
@@ -67,6 +77,10 @@
         gap: .2rem;
         font-size: 2rem;
         color: $gallery-background-dark;
+
+        @media screen and (width <=768px) {
+            font-size: 0.815rem;
+        }
 
         .on {
             color: $color-primary;
@@ -86,5 +100,15 @@
         padding: 0.3em 1em;
         border-radius: .7rem;
         text-align: center;
+        font-size: 0.875rem;
+        font-weight: 500;
+    }
+
+    @media screen and (width <=768px) {
+        grid-template-columns: repeat(auto-fit, minmax(50px, 100px));
+
+        span {
+            font-size: 0.625rem;
+        }
     }
 }
