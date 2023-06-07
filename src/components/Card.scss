@@ -10,11 +10,12 @@
     background-size: cover;
     position: relative;
     margin-top: 3rem;
+    border: 4px solid transparent;
     transition: transform .5s ease-in;
 
     &:hover {
         transform: scale(1.05);
-        border: 5px solid $color-primary;
+        border: 4px solid $color-primary;
         border-radius: 1.4rem;
     }
 
