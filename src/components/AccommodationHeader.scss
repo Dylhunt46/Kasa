@@ -23,6 +23,10 @@
 
     .accommodation__title {
         flex-grow: 1;
+
+        @media screen and (width <=768px) {
+            margin-top: -1rem;
+        }
     }
 
     .accommodation__owner {
@@ -95,6 +99,10 @@
     grid-template-columns: repeat(auto-fit, minmax(50px, 200px));
     gap: .5rem;
     margin-top: 2rem;
+
+    @media screen and (width <=768px) {
+        margin-top: 0;
+    }
 
     span {
         background-color: $color-primary;
