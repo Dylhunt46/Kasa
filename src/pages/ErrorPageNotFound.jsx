@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './ErrorPageNotFound.scss';
 import Navbar from '../layout/Navbar';
 import Main from '../layout/Main';
+import Footer from '../layout/Footer';
 
 function ErrorPageNotFound() {
   return (
@@ -15,6 +16,7 @@ function ErrorPageNotFound() {
           <Link to="/">Retourner sur la page d'accueil</Link>
         </div>
       </Main>
+      <Footer />
     </>
   );
 }
