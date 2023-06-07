@@ -13,7 +13,7 @@
         background-color: $color-primary;
         color: $color-tertiary;
         padding: .2em 1em;
-        border-radius: .7rem;
+        border-radius: .4rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -22,6 +22,17 @@
             font-size: 2rem;
             cursor: pointer;
         }
+
+        @media screen and (width <=768px) {
+            font-size: 0.820rem;
+            height: 1.9rem;
+
+            i {
+                font-size: 1.2rem;
+            }
+        }
+
+
     }
 
     .description__content {
@@ -35,6 +46,12 @@
 
         li {
             list-style-type: none;
+            font-weight: 500;
+
+
+            @media screen and (width <=768px) {
+                font-size: .75rem;
+            }
         }
 
         &.hidden {
