@@ -21,7 +21,7 @@ function AccommodationHeader({ selectedAccommodation }) {
             <span>{firstname}</span> <span>{lastname}</span>
           </h3>
           <div className="accommodation__owner__badge">
-            <img src={selectedAccommodation.host.picture} alt="" />
+            <img src={selectedAccommodation.host.picture} alt="Hôte" />
           </div>
         </div>
         <div className="accommodation__owner__stars">
