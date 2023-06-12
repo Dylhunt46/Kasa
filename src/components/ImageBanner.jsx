@@ -26,10 +26,15 @@ function ImageBanner(props) {
 
   const getCarouselOrDefaultImage = () => {
     if (!arePicturesAvailable()) {
-      return <img src="./about-banner.png" alt="" className="show" />;
+      return <img src="./about-banner.png" alt="Paysage" className="show" />;
     }
     return pictures.map((pic, index) => (
-      <img key={pic} src={pic} alt="" className={getClassName(index)} />
+      <img
+        key={pic}
+        src={pic}
+        alt="Hébergement"
+        className={getClassName(index)}
+      />
     ));
   };
 
