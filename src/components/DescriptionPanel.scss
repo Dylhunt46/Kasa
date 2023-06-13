@@ -44,6 +44,8 @@
 
     .description__content {
         background-color: $gallery-background-dark;
+        color: $color-primary;
+        font-weight: 400;
         padding: 2.5rem 1rem;
         border-radius: .7rem;
         position: relative;
