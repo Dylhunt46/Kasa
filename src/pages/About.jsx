@@ -1,12 +1,12 @@
 import React from 'react';
-import ImageBanner from '../components/ImageBanner.jsx';
+import Banner from '../components/Banner.jsx';
 import DescriptionPanel from '../components/DescriptionPanel';
 import './About.scss';
 
 function About() {
   return (
     <>
-      <ImageBanner />
+      <Banner />
       <div className="about__container">
         <DescriptionPanel
           title="Fiabilité"
