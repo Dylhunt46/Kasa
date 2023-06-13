@@ -37,12 +37,11 @@
     &__about {
         width: 98%;
         height: 223px;
-        // position: relative;
-        // display: grid;
-        // place-items: center;
+        position: relative;
+        display: grid;
+        place-items: center;
         margin: auto auto 2rem;
         border-radius: 2rem;
-
         background-image: linear-gradient(rgba(0, 0, 0, 0.3),
                 rgba(0, 0, 0, 0.3)), url(./../assets/about-banner.png);
         background-size: cover;
@@ -51,7 +50,6 @@
         @media screen and (width <=768px) {
             width: 100%;
             border-radius: 0.65rem;
-
         }
     }
 }
