@@ -1,6 +1,8 @@
 @use "../scss/variables.scss" as *;
 
 .gallery {
+    width: 96%;
+    margin-inline: auto;
     background: $gallery-background-dark;
     min-height: 50vh;
     border-radius: 2rem;
@@ -18,6 +20,7 @@
 
 @media screen and (max-width: 768px) {
     .gallery {
+        width: 100%;
         justify-content: center;
         background: $gallery-background-light;
         padding: 0;

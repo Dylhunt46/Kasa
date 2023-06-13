@@ -1,7 +1,9 @@
 .about__container {
     padding-inline: 3rem;
+    margin-bottom: 10rem;
 
     @media screen and (width <=768px) {
         padding: 0;
+        margin-bottom: 8rem;
     }
 }

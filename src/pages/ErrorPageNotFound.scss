@@ -30,7 +30,16 @@
         }
 
         h2 {
-            font-size: 1.3rem;
+            width: 300px;
+            margin-inline: auto;
+            font-size: 1.125rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
         }
+
+
+
     }
 }
