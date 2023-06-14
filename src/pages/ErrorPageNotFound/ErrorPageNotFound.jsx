@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './ErrorPageNotFound.scss';
-import Navbar from '../layout/Navbar';
-import Main from '../layout/Main';
-import Footer from '../layout/Footer';
+import Navbar from '../../layout/Navbar/Navbar';
+import Main from '../../layout/Main/Main';
+import Footer from '../../layout/Footer/Footer';
 
 function ErrorPageNotFound() {
   return (

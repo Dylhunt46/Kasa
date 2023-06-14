@@ -1,4 +1,4 @@
-@use "../scss/variables.scss" as *;
+@use "../../scss/variables.scss" as *;
 
 .banner {
     width: 98%;
@@ -7,10 +7,9 @@
     position: relative;
     display: grid;
     place-items: center;
-
     border-radius: 2rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3),
-            rgba(0, 0, 0, 0.3)), url(./../assets/HomeBanner.png);
+            rgba(0, 0, 0, 0.3)), url(../../assets/HomeBanner.png);
     background-size: cover;
     background-position: center;
 
@@ -43,7 +42,7 @@
         margin: auto auto 2rem;
         border-radius: 2rem;
         background-image: linear-gradient(rgba(0, 0, 0, 0.3),
-                rgba(0, 0, 0, 0.3)), url(./../assets/about-banner.png);
+                rgba(0, 0, 0, 0.3)), url(../../assets/about-banner.png);
         background-size: cover;
         background-position: center;
 

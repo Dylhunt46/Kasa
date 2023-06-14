@@ -1,6 +1,6 @@
 import React from 'react';
-import Banner from '../components/Banner';
-import Gallery from '../components/Gallery';
+import Banner from '../../components/Banner/Banner';
+import Gallery from '../../components/Gallery/Gallery';
 import './HomePage.scss';
 
 function HomePage() {

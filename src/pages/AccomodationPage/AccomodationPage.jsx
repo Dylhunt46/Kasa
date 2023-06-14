@@ -1,9 +1,9 @@
 import React from 'react';
 import './AccomodationPage.scss';
-import Collapse from '../components/Collapse';
-import Carousel from '../components/Carousel.jsx';
-import AccommodationHeader from '../components/AccommodationHeader';
-import useAccommodation from '../hooks/useAccommodation';
+import Collapse from '../../components/Collapse/Collapse';
+import Carousel from '../../components/Carousel/Carousel.jsx';
+import AccommodationHeader from '../../components/AccomodationHeader/AccommodationHeader';
+import useAccommodation from '../../hooks/useAccommodation';
 
 function AccomodationPage() {
   const selectedAccommodation = useAccommodation();

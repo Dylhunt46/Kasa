@@ -1,7 +1,7 @@
 import React from 'react';
 import './gallery.scss';
-import Card from './Card.jsx';
-import useAccomodations from './../hooks/useAccommodations.jsx';
+import Card from '../Card/Card.jsx';
+import useAccomodations from '../../hooks/useAccommodations.jsx';
 
 function Gallery() {
   const accommodations = useAccomodations();
