@@ -12,7 +12,7 @@ function Banner() {
     if (location.pathname === '/about') {
       setAboutPage(true);
     }
-  }, []);
+  }, [location.pathname]);
 
   return (
     <div className={aboutPage ? 'banner__about' : 'banner'}>
