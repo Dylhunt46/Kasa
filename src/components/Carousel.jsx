@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './ImageBanner.scss';
+import './Carousel.scss';
 
-function ImageBanner(props) {
+function Carousel(props) {
   const pictures = props.pictures;
   const [currentPicture, setCurrentPicture] = useState(0);
   const getClassName = (index) => {
@@ -58,4 +58,4 @@ function ImageBanner(props) {
   );
 }
 
-export default ImageBanner;
+export default Carousel;

@@ -1,25 +1,25 @@
 import React from 'react';
 import './AccomodationPage.scss';
-import DescriptionPanel from '../components/DescriptionPanel';
-import ImageBanner from '../components/ImageBanner.jsx';
+import Collapse from '../components/Collapse';
+import Carousel from '../components/Carousel.jsx';
 import AccommodationHeader from '../components/AccommodationHeader';
 import useAccommodation from '../hooks/useAccommodation';
 
 function AccomodationPage() {
   const selectedAccommodation = useAccommodation();
 
-  if (selectedAccommodation == null) return <div>... Loading</div>;
+  if (selectedAccommodation == null) return <div>Loading...</div>;
 
   return (
     <div className="accommodation-page">
-      <ImageBanner pictures={selectedAccommodation.pictures} />
+      <Carousel pictures={selectedAccommodation.pictures} />
       <AccommodationHeader selectedAccommodation={selectedAccommodation} />
       <div className="accommodation__description__area">
-        <DescriptionPanel
+        <Collapse
           title="Description"
           content={selectedAccommodation.description}
         />
-        <DescriptionPanel
+        <Collapse
           title="Equipement"
           content={selectedAccommodation.equipments.map((eq, i) => (
             <li key={i}>{eq}</li>

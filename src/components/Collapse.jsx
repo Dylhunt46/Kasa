@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './DescriptionPanel.scss';
+import './Collapse.scss';
 
-function DescriptionPanel(props) {
+function Collapse(props) {
   const [isContentVisible, setIsContentVisible] = useState(false);
   const showContent = () => {
     setIsContentVisible(!isContentVisible);
@@ -21,4 +21,4 @@ function DescriptionPanel(props) {
   );
 }
 
-export default DescriptionPanel;
+export default Collapse;
