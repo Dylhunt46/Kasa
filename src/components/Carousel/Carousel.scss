@@ -1,8 +1,12 @@
 @use "../../scss/variables.scss" as *;
 
 .Image__banner {
-    margin-bottom: 2rem;
+    margin: 1.25rem 0 1.875rem;
     position: relative;
+
+    @media screen and (width <=768px) {
+        margin: 1.875rem 0 .9375rem;
+    }
 
     .btn {
         position: absolute;

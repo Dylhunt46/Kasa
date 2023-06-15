@@ -1,5 +1,7 @@
 @use "../../scss/variables.scss" as *;
 
+
+
 .card {
     border-radius: 1rem;
     flex-basis: 30%;
@@ -20,7 +22,7 @@
     }
 
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1000px) {
         margin-top: 1rem;
         flex-basis: 100%;
         width: 100%;

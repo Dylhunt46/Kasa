@@ -46,6 +46,7 @@
         background-color: $gallery-background-dark;
         color: $color-primary;
         font-weight: 400;
+        font-size: 1.125rem;
         padding: 2.5rem 1rem;
         border-radius: .7rem;
         position: relative;
@@ -55,8 +56,6 @@
 
         li {
             list-style-type: none;
-            font-weight: 500;
-
 
             @media screen and (width <=768px) {
                 font-size: .75rem;
@@ -74,6 +73,8 @@
             transform: translateY(0);
             // visibility: visible;
             // opacity: 1;
+            margin-bottom: -2rem;
+            height: 9rem;
         }
     }
 }

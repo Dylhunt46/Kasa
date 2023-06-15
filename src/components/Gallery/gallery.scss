@@ -1,8 +1,7 @@
 @use "../../scss/variables.scss" as *;
 
 .gallery {
-    width: 96%;
-    margin-inline: auto;
+    width: 100%;
     background: $gallery-background-dark;
     min-height: 50vh;
     border-radius: 2rem;
@@ -10,27 +9,15 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 1rem;
-    padding: 1rem;
-
-    &>* {
-        width: 100%;
-        max-width: 20rem;
-    }
+    overflow: hidden;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .gallery {
         width: 100%;
         justify-content: center;
         background: $gallery-background-light;
         padding: 0;
         flex-direction: column;
-
-        &>* {
-            max-width: 100%;
-
-        }
     }
-
-
 }

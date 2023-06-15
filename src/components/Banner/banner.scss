@@ -1,9 +1,9 @@
 @use "../../scss/variables.scss" as *;
 
 .banner {
-    width: 98%;
+    width: 100%;
     height: 223px;
-    margin: auto auto 2rem;
+    margin: 3.9375rem 0 2.6875rem;
     position: relative;
     display: grid;
     place-items: center;
@@ -23,7 +23,7 @@
     @media screen and (width <=768px) {
         height: 111px;
         border-radius: .65rem;
-        margin-bottom: 1rem;
+        margin: 1rem 0 1.375rem;
 
         h2 {
             font-size: 1.5rem;
@@ -34,12 +34,12 @@
     }
 
     &__about {
-        width: 98%;
+        width: 100%;
         height: 223px;
         position: relative;
         display: grid;
         place-items: center;
-        margin: auto auto 2rem;
+        margin: 2.75rem 0 1.9375rem;
         border-radius: 2rem;
         background-image: linear-gradient(rgba(0, 0, 0, 0.3),
                 rgba(0, 0, 0, 0.3)), url(../../assets/about-banner.png);
@@ -49,6 +49,7 @@
         @media screen and (width <=768px) {
             width: 100%;
             border-radius: 0.65rem;
+            margin: 1.0625rem 0 1.1875rem;
         }
     }
 }

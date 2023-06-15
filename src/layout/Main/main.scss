@@ -1,8 +1,10 @@
 main {
     min-height: 60vh;
-    padding: 2rem 3rem;
+    //padding: 2rem 3rem;
+    margin-inline: 6.25em;
 
     @media screen and (width <=768px) {
-        padding: 1rem;
+        //padding: 1rem;
+        margin-inline: 1.25rem;
     }
 }
